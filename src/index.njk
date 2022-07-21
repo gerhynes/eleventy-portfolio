@@ -3,85 +3,13 @@ title: "Eleventy Portfolio"
 layout: "base.njk"
 ---
 
-<div class="profile">
-  <div class="profile__image-wrapper">
-    <img class="profile__image" src="/images/profile.jpg" alt="">
-  </div>
-  <div class="profile__card">
-    <p class="profile__text">Hi! I'm Marie, a marine biologist turned software developer from New Orleans.</p>
-    <p class="profile__text">I'm a <span class="profile__text--highlight">Frontend Developer</span> who loves building sites and apps that help people reach their personal and professional goals. I mainly build with the Jamstack architecture for its speed, security and scalability.</p>
-    <p class="profile__text">Tech I love to work with</p>
-    
-    <div class="profile__logos">
-      <div class="tooltip">
-        <img class="profile__logo" src="/images/javascript.svg" alt="JavaScript">
-        <span class="tooltip-text">JavaScript</span>
-      </div>
-      <div class="tooltip">
-        <img class="profile__logo" src="/images/react.svg" alt="React.js">
-        <span class="tooltip-text">React.js</span>
-      </div>
-      <div class="tooltip">
-        <img class="profile__logo" src="/images/jamstack.svg" alt="Jamstack">
-        <span class="tooltip-text">Jamstack</span>
-      </div>
-      <div class="tooltip">
-        <img class="profile__logo" src="/images/11ty.png" alt="11ty">
-        <span class="tooltip-text">11ty</span>
-      </div>
-      <div class="tooltip">
-        <img class="profile__logo" src="/images/firebase.svg" alt="Firebase">
-        <span class="tooltip-text">Firebase</span>
-      </div>
-      <div class="tooltip">
-        <img class="profile__logo" src="/images/aws-lambda.png" alt="Serverless">
-        <span class="tooltip-text">Serverless</span>
-      </div>
-    </div>
-  </div>
-</div>
+{% include "profile.njk" %}
 
-<section class="projects container">
+<section class="projects">
   <h2 class="project__heading">Recent Projects</h2>
   <div class="project-grid">
-    <div class="project-card">
-      <img class="project-card__image" src="http://placeimg.com/640/360/tech" alt="">
-      <div class="project-card__body">
-        <div class="project-card__tags">
-          <span class="project-card__tag">React</span>
-          <span class="project-card__tag">Leaflet.js</span>
-          <span class="project-card__tag">Serverless Functions</span>
-        </div>
-        <h3 class="project-card__title">
-          <a href="#">Project 1</a>
-        </h3>
-        <p class="project-card__summary">Architecto eligendi perspiciatis obcaecati minus nostrum eum consequatur, fugit beatae assumenda aliquam consequuntur debitis, eos suscipit dolores.</p>
-        <a class="project-card__link" href="#">Read project case study 
-          <svg xmlns="http://www.w3.org/2000/svg" class="project-card__link-icon" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="project-card">
-      <img class="project-card__image" src="http://placeimg.com/640/360/tech" alt="">
-      <div class="project-card__body">
-        <div class="project-card__tags">
-          <span class="project-card__tag">React</span>
-          <span class="project-card__tag">Leaflet.js</span>
-          <span class="project-card__tag">Serverless Functions</span>
-        </div>
-        <h3 class="project-card__title">
-          <a href="#">Project 1</a>
-        </h3>
-        <p class="project-card__summary">Architecto eligendi perspiciatis obcaecati minus nostrum eum consequatur, fugit beatae assumenda aliquam consequuntur debitis, eos suscipit dolores.</p>
-        <a class="project-card__link" href="#">Read project case study 
-          <svg xmlns="http://www.w3.org/2000/svg" class="project-card__link-icon" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    
+    {% for project in collections.projects %}
+      {% include "project-card.njk" %}
+    {% endfor %}
   </div>
 </section>

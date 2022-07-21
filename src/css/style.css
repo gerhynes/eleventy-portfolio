@@ -52,7 +52,7 @@ ol {
 
 img,
 picture {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -69,8 +69,9 @@ a {
 }
 
 .container {
-  max-width: 1015px;
+  max-width: 64rem;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .header {
@@ -123,6 +124,18 @@ a {
   padding: 0.5rem 0;
 }
 
+.heading--main {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--amber-500);
+  padding: 1rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Profile Styles */
 .profile {
   display: flex;
   flex-direction: column;
@@ -147,7 +160,8 @@ a {
 }
 
 .profile__text {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  color: var(--slate-600);
 }
 
 .profile__text--highlight {
@@ -160,18 +174,20 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .profile__logo {
   width: 35px;
 }
 
-.tooltip {
+/* Tooltip Styles */
+.has-tooltip {
   position: relative;
   display: inline-block;
 }
 
-.tooltip .tooltip-text {
+.has-tooltip .tooltip {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -186,10 +202,10 @@ a {
   margin-left: -60px;
 }
 
-.tooltip .tooltip-text::after {
+.has-tooltip .tooltip::after {
   content: " ";
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -197,13 +213,13 @@ a {
   border-color: black transparent transparent transparent;
 }
 
-.tooltip:hover .tooltip-text {
+.has-tooltip:hover .tooltip {
   visibility: visible;
 }
 
+/* Project Styles */
 .projects {
-  margin: 4rem auto;
-  padding: 0 1.5rem;
+  margin: 2rem auto 4rem auto;
 }
 
 .project__heading {
@@ -229,6 +245,7 @@ a {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
   transition: transform 0.3s ease 0s;
+  aspect-ratio: 16 / 9;
 }
 
 .project-card__image:hover {
@@ -257,6 +274,7 @@ a {
   color: var(--amber-700);
   border-radius: 9999px;
   padding: 0.25rem 0.5rem;
+  display: flex;
 }
 
 .project-card__summary {
@@ -277,6 +295,115 @@ a {
 
 .project-card__link:hover {
   text-decoration: underline;
+}
+
+/* Project Page Styles */
+
+.project-list {
+  max-width: 42rem;
+  margin: 0 auto 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  margin-bottom: 4rem;
+  padding: 0 1.5rem;
+}
+
+.project__image {
+  margin-bottom: 2rem;
+}
+
+/* Prose Styles */
+.prose {
+  font-size: 1.125rem;
+  color: var(--slate-600);
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--amber-500);
+}
+
+.prose ul {
+  margin-bottom: 1rem;
+}
+
+.prose ul > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.prose ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: var(--grey-medium);
+  border-radius: 50%;
+  width: 0.375em;
+  height: 0.375em;
+  top: 0.6875em;
+  left: 0.25em;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+}
+
+/* Contact Styles */
+.contact__sub-heading {
+  color: var(--slate-600);
+  padding: 0 1rem;
+}
+
+.form {
+  max-width: 36rem;
+  border-radius: 0.25rem;
+  margin: 4rem auto;
+}
+
+.form__section {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.form__input {
+  padding: 0.5rem;
+  border: 1px solid var(--slate-300);
+  display: block;
+  border-radius: 0.25rem;
+  color: var(--slate-600);
+}
+
+.form__button {
+  background-color: var(--amber-500);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 2rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form__button:hover {
+  background-color: var(--amber-600);
+}
+
+/* About Styles */
+.bio {
+  margin: 0 auto 4rem auto;
+  max-width: 65ch;
 }
 
 @media (min-width: 640px) {

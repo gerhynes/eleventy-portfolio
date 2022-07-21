@@ -1,0 +1,10 @@
+---
+title: "Eleventy Portfolio"
+layout: "base.njk"
+---
+
+<div class="project-list">
+  {% for project in collections.projects %}
+    {% include "project-card.njk" %}
+  {% endfor %}
+</div>

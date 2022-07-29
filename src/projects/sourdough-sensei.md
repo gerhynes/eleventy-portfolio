@@ -1,11 +1,12 @@
 ---
 title: "Sourdough Sensei"
 summary: "Like a lot of people, I got really into sourdough in 2020. So I made this app to help me bake delicious bread."
-image: /images/placeholder.jpg
+image: /images/sourdough-sensei.jpg
 imageAlt: "Screenshots of sourdough bread app"
 tech:
   - "React.js"
   - "Firebase"
+  - "Tailwind CSS"
 siteUrl: "#"
 repoUrl: "#"
 ---

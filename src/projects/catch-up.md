@@ -1,11 +1,11 @@
 ---
-title: "Spellbook"
-summary: "I'm a huge Dungeons and Dragons fan, but keeping my spells straight was always a challenge. So I built this app."
-image: /images/spellbook.jpg
-imageAlt: "Screenshots of DnD project"
+title: "Catch Up"
+summary: "Sometimes it's hard to keep in touch with friends. I made this app to remind me if we haven't talked in a while."
+image: /images/catch-up.jpg
+imageAlt: "Screenshots of catch up app"
 tech:
   - "Next.js"
-  - "Supabase"
+  - "Airtable"
   - "Tailwind CSS"
 siteUrl: "#"
 repoUrl: "#"
@@ -13,7 +13,7 @@ repoUrl: "#"
 
 ### Poblem Solved
 
-Yes, I could have just used DnD Beyong. But where's the fun in that? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci.
 
 ### Technologies Used
 

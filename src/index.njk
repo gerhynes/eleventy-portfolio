@@ -4,9 +4,10 @@ layout: "base.njk"
 ---
 
 {% include "profile.njk" %}
+{% include "technologies.njk" %}
 
 <section class="projects">
-  <h2 class="project__heading">Recent Projects</h2>
+  <h2 class="project__heading">Recent projects</h2>
   <div class="project-grid">
     {% for project in collections.projects %}
       {% include "project-card.njk" %}

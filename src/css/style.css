@@ -120,8 +120,12 @@ a {
 }
 
 .footer {
+  width: 100%;
+  text-align: center;
   flex-shrink: 0;
   padding: 0.5rem 0;
+  background-color: var(--amber-500);
+  color: white;
 }
 
 .heading--main {
@@ -170,56 +174,61 @@ a {
   font-size: 1.5rem;
 }
 
-.profile__logos {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+.profile__link {
+  font-weight: bold;
+  color: var(--amber-500);
+  text-decoration: underline;
 }
 
-.profile__logo {
-  width: 35px;
-}
-
-/* Tooltip Styles */
-.has-tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.has-tooltip .tooltip {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
+/* Technologies styles */
+.technologies__heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--amber-500);
+  padding: 1rem 0;
   text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
 }
 
-.has-tooltip .tooltip::after {
-  content: " ";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
+.technologies__list {
+  width: 100%;
+  max-width: 36rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 1.5rem;
 }
 
-.has-tooltip:hover .tooltip {
-  visibility: visible;
+.technologies__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technologies__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 100%;
+}
+
+.technologies__title {
+  font-weight: 400;
+  color: var(--slate-600);
 }
 
 /* Project Styles */
 .projects {
   margin: 2rem auto 4rem auto;
+}
+
+.projects__heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--amber-500);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .project__heading {

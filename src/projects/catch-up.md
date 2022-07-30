@@ -1,11 +1,11 @@
 ---
 title: "Catch Up"
-summary: "Sometimes it's hard to keep in touch with friends. I made this app to remind me if we haven't talked in a while."
+summary: "Sometimes it's hard to keep in touch with friends and family. I made this app to remind me to schedule a call if we haven't talked in a while."
 image: /images/catch-up.jpg
 imageAlt: "Screenshots of catch up app"
 tech:
   - "Next.js"
-  - "Airtable"
+  - "Firebase"
   - "Tailwind CSS"
 siteUrl: "#"
 repoUrl: "#"

@@ -4,7 +4,10 @@ layout: "base.njk"
 
 <div class="project">
   <h2 class="project__heading">{{ title }}</h2>
-  <img class="project__image" src="{{ image }}" alt="">
+  <div class="project__image-wrapper">
+      {% 11tyImage image, title, "(min-width: 30em) 50vw, 100vw" %}
+  </div>
+  {# <img class="project__image" src="{{ image }}" alt=""> #}
   <div class="project__content prose">
     {{ content | safe }}
   </div>

@@ -1,19 +1,22 @@
 <div class="project-card">
-      <img class="project-card__image" src="{{ project.data.image }}" alt="">
-      <div class="project-card__body">
-        <div class="project-card__tags">
-          {% for tag in project.data.tech %}
-            <span class="project-card__tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        <h3 class="project-card__title">
-          <a href="{{ project.url }}">{{ project.data.title }}</a>
-        </h3>
-        <p class="project-card__summary">{{ project.data.summary }}</p>
-        <a class="project-card__link" href="{{ project.url }}">Read project case study 
-          <svg xmlns="http://www.w3.org/2000/svg" class="project-card__link-icon" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-          </svg>
-        </a>
-      </div>
+  <div class="project-card__image-wrapper">
+    {% 11tyImage project.data.image, project.data.imageAlt, "(min-width: 30em) 50vw, 100vw" %}
+  </div>
+    {# <img class="project-card__image" src="{{ project.data.image }}" alt=""> #}
+  <div class="project-card__body">
+    <div class="project-card__tags">
+      {% for tag in project.data.tech %}
+        <span class="project-card__tag">{{ tag }}</span>
+      {% endfor %}
     </div>
+    <h3 class="project-card__title">
+      <a href="{{ project.url }}">{{ project.data.title }}</a>
+    </h3>
+    <p class="project-card__summary">{{ project.data.summary }}</p>
+    <a class="project-card__link" href="{{ project.url }}">Read project case study 
+      <svg xmlns="http://www.w3.org/2000/svg" class="project-card__link-icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+      </svg>
+    </a>
+  </div>
+</div>

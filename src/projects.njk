@@ -5,7 +5,7 @@ layout: "base.njk"
 
 <h2 class="projects__heading">Recent projects</h2>
 <div class="project-list">
-  {% for project in collections.projects %}
+  {% asyncEach project in collections.projects %}
     {% include "project-card.njk" %}
-  {% endfor %}
+  {% endeach %}
 </div>

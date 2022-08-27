@@ -5,12 +5,4 @@ layout: "base.njk"
 
 {% include "profile.njk" %}
 {% include "technologies.njk" %}
-
-<section class="projects">
-  <h2 class="project__heading">Recent projects</h2>
-  <div class="project-grid">
-    {% asyncEach project in collections.projects %}
-      {% include "project-card.njk" %}
-    {% endeach %}
-  </div>
-</section>
+{% include "project-grid.njk" %}

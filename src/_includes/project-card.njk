@@ -1,8 +1,7 @@
 <div class="project-card">
   <div class="project-card__image-wrapper">
-    {% 11tyImage project.data.image, project.data.imageAlt, "(min-width: 30em) 50vw, 100vw" %}
+    {% EleventyImage project.data.image, project.data.imageAlt, "(min-width: 30em) 50vw, 100vw" %}
   </div>
-    {# <img class="project-card__image" src="{{ project.data.image }}" alt=""> #}
   <div class="project-card__body">
     <div class="project-card__tags">
       {% for tag in project.data.tech %}

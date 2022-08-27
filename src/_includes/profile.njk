@@ -1,11 +1,13 @@
 <section class="profile">
   <div class="profile__image-wrapper">
-    <img class="profile__image" src="/images/profile.jpg" alt="">
+    {# <img class="profile__image" src="/images/profile.jpg" alt="Marie Jackson, Software Developer"> #}
+    {% EleventyImage "/images/profile.jpg", "Marie Jackson, Software Developer", "(min-width: 16em) 50vw, 100vw" %}
   </div>
   <div class="profile__card">
-    <p class="profile__text">Hi! I'm <span class="profile__text--highlight">Marie</span>, a mathematician turned software developer from Hampton, Virginia.</p>
+    <h2 class="profile__text profile__text--lead">Hi! I'm <span class="profile__text--highlight">Marie</span>, a mathematician turned software developer from Hampton, Virginia.</h2>
     <p class="profile__text">As a <span class="profile__text--highlight">Frontend Developer</span>, I love building sites and apps that help people reach their personal and professional goals.</p>
-    <p class="profile__text">I focus on speed, security and scalability, using React.js and Firebase to create rich, dynamic experiences.</p>
-    <p class="profile__text">I'm always open to new opportunities and projects. So don't hesitate to <a class="profile__link" href="/contact">get in touch</a>.<p>
+    <p class="profile__text">I focus on speed, security and scalability, using <span class="profile__text--emphasis">React.js</span> and <span class="profile__text--emphasis">Firebase</span> to create rich, dynamic experiences.</p>
+    <p class="profile__text">I'm always open to new opportunities and projects.<p>
+    <p class="profile__text">So don't hesitate to <a class="profile__link" href="/contact">get in touch</a>.</p>
   </div>
 </section>

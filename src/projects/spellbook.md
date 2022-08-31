@@ -2,7 +2,7 @@
 title: "Spellbook"
 summary: "I'm a huge Dungeons and Dragons fan, but keeping my spells straight has always been a challenge. I built this app to put all the information I need at my fingertips."
 image: /images/spellbook.jpg
-imageAlt: "Screenshots of DnD project"
+imageAlt: "Screenshot of DnD spellbook app"
 tech:
   - "Next.js"
   - "Firebase"
